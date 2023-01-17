@@ -582,7 +582,11 @@ export const BasicFormat = () => {
               <p>Unable to perform</p>
             </div>
 
-            <button id="gobackbutton" onClick={handleClickToGoBack}>
+            <button
+              disabled={timeOn}
+              id="gobackbutton"
+              onClick={handleClickToGoBack}
+            >
               GO BACK
             </button>
           </div>
