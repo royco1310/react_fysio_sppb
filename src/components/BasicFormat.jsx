@@ -59,7 +59,7 @@ export const BasicFormat = () => {
   }, [timeOn]);
 
   useEffect(() => {
-    if (time === 3000 && mainText === "BALANCE TEST") {
+    if (time === 10000 && mainText === "BALANCE TEST") {
       setTimeOn(false);
     }
   });
@@ -67,7 +67,7 @@ export const BasicFormat = () => {
   const handleClickNext = () => {
     setTime(0);
     if (
-      time < 3000 &&
+      time < 10000 &&
       mainText === "BALANCE TEST" &&
       subText === "SIDE BY SIDE"
     ) {
@@ -81,7 +81,7 @@ export const BasicFormat = () => {
         getPointSideBySide + 0
       );
     } else if (
-      time === 3000 &&
+      time === 10000 &&
       mainText === "BALANCE TEST" &&
       subText === "SIDE BY SIDE"
     ) {
@@ -96,7 +96,7 @@ export const BasicFormat = () => {
         getPointSideBySide + 1
       );
     } else if (
-      time < 3000 &&
+      time < 10000 &&
       mainText === "BALANCE TEST" &&
       subText === "SEMI-TANDEM"
     ) {
@@ -110,7 +110,7 @@ export const BasicFormat = () => {
         getPointSemiTandem + 0
       );
     } else if (
-      time === 3000 &&
+      time === 10000 &&
       mainText === "BALANCE TEST" &&
       subText === "SEMI-TANDEM"
     ) {
@@ -125,7 +125,7 @@ export const BasicFormat = () => {
         getPointSemiTandem + 1
       );
     } else if (
-      time === 3000 &&
+      time === 10000 &&
       mainText === "BALANCE TEST" &&
       subText === "TANDEM"
     ) {
@@ -143,7 +143,8 @@ export const BasicFormat = () => {
       );
     } else if (
       //her må vi sette ekte verdi på tid etterhvert
-      time > 1000 &&
+      time > 3000 &&
+      time < 9999 &&
       mainText === "BALANCE TEST" &&
       subText === "TANDEM"
     ) {
@@ -161,7 +162,7 @@ export const BasicFormat = () => {
       );
     } else if (
       //her må vi sette ekte verdi på tid etterhvert
-      time < 1000 &&
+      time < 3000 &&
       mainText === "BALANCE TEST" &&
       subText === "TANDEM"
     ) {
