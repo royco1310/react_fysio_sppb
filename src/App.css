@@ -1,38 +1,86 @@
-.App {
+body {
   text-align: center;
+  display: list-item;
+  background-color: skyblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.analyses {
+  padding: 5px 40px;
+}
+.button {
+  font-size: 60px;
+  padding: 20px 60px;
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#stopwatch {
+  font-size: 100px;
+}
+
+#unablebutton {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: inline-flex;
+  margin: 5px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#checkbutton {
+  margin: 0 5px 0 0;
+  padding: 15px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#gobackbutton {
+  padding: 10px;
+  margin-left: 50px;
+}
+
+#gobackbutton2 {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#sub {
+  display: inline-flex;
+}
+
+#subtext {
+  font-size: 20px;
+}
+
+img {
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+table {
+  display: grid;
+  justify-items: center;
+}
+
+tr {
+  margin-top: 20px;
+}
+
+td {
+  line-height: 0.4em;
+}
+
+#totalscore {
+  font-size: 30px;
+}
+
+.resultlevel {
+  font-weight: bold;
+  color: red;
+}
+
+#savebtn {
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
